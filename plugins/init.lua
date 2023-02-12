@@ -41,7 +41,31 @@ local plugins = {
       require "custom.plugins.null-ls"
     end,
   },
+  -- Dasboard
+  ["goolord/alpha-nvim"] = {
+    after = "base46",
+    disable = false,
+    config = function()
+      require "custom.plugins.alpha"
+    end,
+  },
 
+  -- key mappings
+  ["folke/which-key.nvim"] = {
+    disable = false,
+    module = "which-key",
+    keys = { "<leader>", '"', "'", "`" },
+    config = function()
+      require "custom.plugins.whichkey"
+    end,
+    setup = function()
+      require("core.utils").load_mappings "whichkey"
+    end,
+  },
+
+
+
+  --
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
