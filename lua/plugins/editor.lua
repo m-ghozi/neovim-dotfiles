@@ -174,4 +174,15 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
+
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    cmd = "Neotree",
+    opts = {
+      window = {
+        position = "left",
+        width = 30,
+      },
+    },
+  },
 }
