@@ -20,6 +20,8 @@ return {
         "scss",
         "sql",
         "svelte",
+        "ninja",
+        "rst",
       }
 
       opts.query_linter = {

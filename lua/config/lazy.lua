@@ -27,6 +27,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     -- import/override with your plugins
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "plugins.extras.lang" },
     { import = "plugins" },
   },
   defaults = {
