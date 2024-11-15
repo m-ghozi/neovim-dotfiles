@@ -22,6 +22,8 @@ return {
         "svelte",
         "ninja",
         "rst",
+        "bash",
+        "regex",
       }
 
       opts.query_linter = {
